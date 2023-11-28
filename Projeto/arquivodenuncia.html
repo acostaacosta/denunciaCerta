@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/denuncias.css">
+    <link rel="shortcut icon" href="img/slot.svg" type="image/x-icon">
+    <title>Denúncia Certa</title>
+
+
+</head>
+
+<body id="body">
+    <img class="Onda" src="img/onda.png">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <a href="index.html"><img src="img/logo.jfif" alt="Logo fabrica" class="img_logo_header"></a>
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="index.html">Inicio</a>
+            <a href="denuncia.html">Relátorio Denúncias</a>
+            <a href="arquivodenuncia.html">Denúncias</a>
+            <a href="sobre.html">Sobre nós</a>
+
+        </div>
+    </div>
+    
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+    <!-- Botões de denúncia -->
+    <h2 id="mesesdenuncia"><i class="fas fa-exclamation-triangle icon-denuncia"></i>Principais Denúncias de Dezembro 2023</h2>
+
+    <button class="open-button" onclick="openDenuncia(1)">Abrir Denúncia 1</button>
+    <button class="open-button" onclick="openDenuncia(2)">Abrir Denúncia 2</button>
+    <button class="open-button" onclick="openDenuncia(3)">Abrir Denúncia 3</button>
+    <button class="open-button" onclick="openDenuncia(4)">Abrir Denúncia 4</button>
+
+
+    <h2 id="mesesdenuncia"><i class="fas fa-exclamation-triangle icon-denuncia"></i>Principais Denúncias de Novembro 2023</h2>
+
+    <button class="open-button" onclick="openDenuncia(5)">Abrir Denúncia 1</button>
+    <button class="open-button" onclick="openDenuncia(6)">Abrir Denúncia 2</button>
+    <button class="open-button" onclick="openDenuncia(7)">Abrir Denúncia 3</button>
+    <button class="open-button" onclick="openDenuncia(8)">Abrir Denúncia 4</button>
+
+    <h2 id="mesesdenuncia"><i class="fas fa-exclamation-triangle icon-denuncia"></i>Principais Denúncias de Outubro 2023</h2>
+
+    <button class="open-button" onclick="openDenuncia(9)">Abrir Denúncia 1</button>
+    <button class="open-button" onclick="openDenuncia(10)">Abrir Denúncia 2</button>
+    <button class="open-button" onclick="openDenuncia(11)">Abrir Denúncia 3</button>
+    <button class="open-button" onclick="openDenuncia(12)">Abrir Denúncia 4</button>
+
+    <h2 id="mesesdenuncia"><i class="fas fa-exclamation-triangle icon-denuncia"></i>Principais Denúncias de Setembro 2023</h2>
+
+    <button class="open-button" onclick="openDenuncia(13)">Abrir Denúncia 1</button>
+    <button class="open-button" onclick="openDenuncia(14)">Abrir Denúncia 2</button>
+    <button class="open-button" onclick="openDenuncia(15)">Abrir Denúncia 3</button>
+    <button class="open-button" onclick="openDenuncia(16)">Abrir Denúncia 4</button>
+
+    <!-- Popup de Denúncias -->
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(1)">X</button>
+            <h2>Denúncia 1</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 1" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab1')">Comentário</button>
+            </div>
+            <div id="ComentarioTab1" class="tab-content">
+                <div id="comentarioTexto1">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup2">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(2)">X</button>
+            <h2>Denúncia 2</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 2" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab2')">Comentário</button>
+            </div>
+            <div id="ComentarioTab2" class="tab-content">
+                <div id="comentarioTexto2">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup3">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(3)">X</button>
+            <h2>Denúncia 3</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 3" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab3')">Comentário</button>
+            </div>
+            <div id="ComentarioTab3" class="tab-content">
+                <div id="comentarioTexto3">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup4">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(4)">X</button>
+            <h2>Denúncia 4</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 4" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab4')">Comentário</button>
+            </div>
+            <div id="ComentarioTab4" class="tab-content">
+                <div id="comentarioTexto4">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup5">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(5)">X</button>
+            <h2>Denúncia 5</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 5" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab5')">Comentário</button>
+            </div>
+            <div id="ComentarioTab5" class="tab-content">
+                <div id="comentarioTexto5">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="popup" id="popup6">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(6)">X</button>
+            <h2>Denúncia 6</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 6" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab6')">Comentário</button>
+            </div>
+            <div id="ComentarioTab6" class="tab-content">
+                <div id="comentarioTexto6">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="popup" id="popup7">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(7)">X</button>
+            <h2>Denúncia 1</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 7" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab7')">Comentário</button>
+            </div>
+            <div id="ComentarioTab7" class="tab-content">
+                <div id="comentarioTexto7">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup8">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(8)">X</button>
+            <h2>Denúncia 2</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 8" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab8')">Comentário</button>
+            </div>
+            <div id="ComentarioTab8" class="tab-content">
+                <div id="comentarioTexto8">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup9">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(9)">X</button>
+            <h2>Denúncia 3</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 9" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab9')">Comentário</button>
+            </div>
+            <div id="ComentarioTab9" class="tab-content">
+                <div id="comentarioTexto9">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup10">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(10)">X</button>
+            <h2>Denúncia 4</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 10" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab10')">Comentário</button>
+            </div>
+            <div id="ComentarioTab10" class="tab-content">
+                <div id="comentarioTexto10">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup11">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(11)">X</button>
+            <h2>Denúncia 5</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 11" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab11')">Comentário</button>
+            </div>
+            <div id="ComentarioTab11" class="tab-content">
+                <div id="comentarioTexto11">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="popup" id="popup12">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(12)">X</button>
+            <h2>Denúncia 6</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 12" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab12')">Comentário</button>
+            </div>
+            <div id="ComentarioTab12" class="tab-content">
+                <div id="comentarioTexto12">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup13">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(13)">X</button>
+            <h2>Denúncia 6</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 13" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab13')">Comentário</button>
+            </div>
+            <div id="ComentarioTab13" class="tab-content">
+                <div id="comentarioTexto13">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup14">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(14)">X</button>
+            <h2>Denúncia 6</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 14" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab14')">Comentário</button>
+            </div>
+            <div id="ComentarioTab14" class="tab-content">
+                <div id="comentarioTexto14">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup15">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(15)">X</button>
+            <h2>Denúncia 6</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 15" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab15')">Comentário</button>
+            </div>
+            <div id="ComentarioTab15" class="tab-content">
+                <div id="comentarioTexto15">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup16">
+        <div class="popup-content">
+            <button class="close-button" onclick="closeDenuncia(16)">X</button>
+            <h2>Denúncia 6</h2>
+            <img src="img/Denuncias/1.jpg" alt="Foto da Denúncia 16" class="view-image">
+            <div class="view-field">
+                <strong>Cidade:</strong> Caruaru-PE
+            </div>
+            <div class="view-field">
+                <strong>Endreço:</strong> Rua São Luiz
+            </div>
+            <div class="view-field">
+                <strong>CEP:</strong> 55028250
+            </div>
+            <div class="view-field">
+                <strong>Localização:</strong>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1694126520012!6m8!1m7!1sIBb9x0inCGqnrGwAFMRCEQ!2m2!1d-8.297347680176005!2d-35.9648213735923!3f242.5691115610981!4f0!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ComentarioTab16')">Comentário</button>
+            </div>
+            <div id="ComentarioTab16" class="tab-content">
+                <div id="comentarioTexto16">Estamos sofrendo a muito tempo com essa situação pedimos urgentemente uma regularização para que possamos ao menos usar a rua.</div>
+            </div>
+        </div>
+    </div>
+        </form>
+
+    <footer>
+        <p>&copy; 2023 Denúncia Certa. Todos os direitos reservados.</p>
+      </footer>
+      <div id="whatsapp-icon">
+        <a href="https://wa.me/8197159248" target="_blank">
+            <div class="icon-container">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+                <span class="tooltip">Suporte</span>
+            </div>
+        </a>
+    </div>
+</body>
+<script src="js/js.js"></script>
+</html>
